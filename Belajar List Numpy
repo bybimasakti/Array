@@ -1,0 +1,193 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOxWVefEc1/f2EKv3avzv7P",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/bybimasakti/Array/blob/main/Belajar%20List%20Numpy\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import numpy as np\n"
+      ],
+      "metadata": {
+        "id": "AmrtqvpMz47m"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Membuat vector\n",
+        "list_array = np.array([1,2,3,4,5,])\n",
+        "print(list_array)"
+      ],
+      "metadata": {
+        "id": "o1eZFjqF0AFk",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "3eb0574c-9452-47c8-d035-71157e73d5cb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1 2 3 4 5]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Membuat data matrix atau multi vector\n",
+        "data_vector = np.array([(1,2,3,4,5),(6,7,8,9,10)])\n",
+        "print(data_vector)\n",
+        "print(data_vector*2) # Akan mengkalikan dua semua nilai didalam list"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Hmwy739d6lsY",
+        "outputId": "be2c3b51-ba17-4997-f009-ae48ab10e6c8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[ 1  2  3  4  5]\n",
+            " [ 6  7  8  9 10]]\n",
+            "[[ 2  4  6  8 10]\n",
+            " [12 14 16 18 20]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Membuat matrix dengan nol\n",
+        "data_zeros = np.zeros((3,3))\n",
+        "print(data_zeros)\n",
+        "print(\"\\n\")\n",
+        "# Membuat matrix dengan 1\n",
+        "data_ones = np.ones((3,4))\n",
+        "print(data_ones)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "KxETo50M8UZK",
+        "outputId": "4d8f4f3f-76a7-40cf-940f-5c00371349ce"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[0. 0. 0.]\n",
+            " [0. 0. 0.]\n",
+            " [0. 0. 0.]]\n",
+            "\n",
+            "\n",
+            "[[1. 1. 1. 1.]\n",
+            " [1. 1. 1. 1.]\n",
+            " [1. 1. 1. 1.]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Membuat data vector range\n",
+        "data_range1 = np.arange(1,10)\n",
+        "data_range2 = np.arange(1,10,2)\n",
+        "print(data_range1)\n",
+        "print(data_range2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3xx8hRcw2IAF",
+        "outputId": "6c908e82-a1a1-4021-8f15-d170614410f6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1 2 3 4 5 6 7 8 9]\n",
+            "[1 3 5 7 9]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Membuat Line Space\n",
+        "data_linespace = np.linspace(1,10,4) # Angka 4 merupakan pembagi\n",
+        "print(data_linespace)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ZsZeEAYt2wAH",
+        "outputId": "e15ecc9c-035c-41cb-c8d9-f7db79c256f5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[ 1.  4.  7. 10.]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "9S0JKIn16OrD"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
